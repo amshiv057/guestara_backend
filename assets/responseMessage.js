@@ -1,0 +1,20 @@
+module.exports = {
+    REQUIRED_FIELD: (fields) => `The following fields are required: ${fields.join(', ')}.`,
+    CATEGORY_ALREADY_EXIST: 'Sorry:This category name is already in use.',
+    SOMETHING_WENT_WRONG:'something went wrong.',
+    CATEGORY_CREATED:'category created successfully.',
+    CATEGORY_NOT_FOUND:'Category not found.',
+    CATEGORY_UPDATED:'Category updated',
+    SUBCATEGORY_CREATED:'sub category created successfully.',
+    SUB_CATEGORY_NOT_FOUND:'sub category is not found.',
+    ITEM_CREATED:'Item created successfully.',
+    ITEM_UPDATED:'Item updated successfully.',
+    USER_REGISTERED: 'User successfully registered.',
+    USER_ALREADY_EXIST: 'user already exits',
+    NO_ACTIVE_POOL: 'No active pool find.',
+    ACTIVE_POOL: 'pool found successfully.',
+    DATA_NOT_FOUND: 'Data not found.',
+    DATA_FOUND: 'Data found successfully',
+    USER_NOT_FOUND: 'User not found.',
+    AIRDROP_NOT_FOUND: 'Airdrop not found.'
+}

@@ -32,5 +32,82 @@ Ensure you have the following software installed on your system:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/guestara_backend.git
+   git clone https://github.com/amshiv057/guestara_backend/tree/UAT
    cd guestara_backend
+2. setup .env file and provide this variables
+CONFIG_DATA='{
+  "development": {
+    "config_id": "development",
+    "port": 5009,
+    "hostAddress": "localhost",
+    "databaseHost": "0.0.0.0",
+    "databasePort": "27017",
+    "databaseName": "guestara",
+    "dbCredential": {
+      "host": "",
+      "user": "",
+      "password": "",
+      "dbName": ""
+    },
+    "swaggerDefinition": {
+      "info": {
+        "title": "Guestara_Backend",
+        "version": "1.0",
+        "description": "Guestara"
+      },
+      "basePath": "/api/v1",
+      "securityDefinitions": {
+        "tokenauth": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    },
+    "cloudinary": {
+      "cloud_name": "",
+      "api_key": "",
+      "api_secret": ""
+    }
+  },
+
+  "staging": {
+    "config_id": "staging",
+    "port": 5009,
+    "hostAddress": "localhost",
+    "databaseHost": "0.0.0.0",
+    "databasePort": "27017",
+    "databaseName": "guestara",
+    "dbCredential": {
+      "host": "",
+      "user": "",
+      "password": "",
+      "dbName": ""
+    },
+    "swaggerDefinition": {
+      "info": {
+        "title": "Guestara_Backend",
+        "version": "1.0",
+        "description": "Guestara"
+      },
+      "basePath": "/api/v1",
+      "securityDefinitions": {
+        "tokenauth": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    },
+    "cloudinary": {
+      "cloud_name": "",
+      "api_key": "",
+      "api_secret": ""
+    }
+  }
+}'
+
+3. run command
+yarn install
+
+congrulations your code will run

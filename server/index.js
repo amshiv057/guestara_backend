@@ -7,7 +7,7 @@ let dbUrl;
 // console.log(global.gConfig.config_id)
 dbUrl = global.gConfig.config_id === 'development' ? `mongodb://${global.gConfig.hostAddress}:${global.gConfig.databasePort}/${global.gConfig.databaseName}` :
     global.gConfig.config_id === 'staging' ? `mongodb+srv://${global.gConfig.dbCredential.user}:${global.gConfig.dbCredential.password}@${global.gConfig.dbCredential.host}/${global.gConfig.dbCredential.dbName}` :
-        'mongodb+srv://tiwarishiv7169:Shivam12@cluster0.bzkdvic.mongodb.nett/blockchain_dev';
+        'mongodb://localhost:27017/guestara';
 console.log(dbUrl)
 
 const port = global.gConfig.port;
